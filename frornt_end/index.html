@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech challenge</title>
+  <style>
+    body {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    form,
+    input {
+      padding: 5px;
+      margin: 5px;
+      font-size: 20px;
+    }
+
+    p {
+      text-align: center;
+      color: red;
+    }
+    h1{
+      color:chocolate;
+    }
+    .submit{
+      background-color: chocolate;
+      border: none;
+      padding: 10px 50px;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+    }
+     .submit:hover{
+       background-color: green;
+     }
+  </style>
+</head>
+
+<body>
+
+  <h1>Event invitation form</h1>
+
+  <form class="form" action="http://localhost:8888/tech_challenge/back_end/index.php" method="get">
+    <label for="fname">First name:</label><br>
+    <input type="text" class="fname" class="input" name="fname" value="Maria"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" class="lname" class="input" name="lname" value="Popadiuk"><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" class="email" class="input" name="email" value="mpopadiuk13@gmail.com"><br>
+    <label for="phone">Phone number:</label><br>
+    <input type="number" class="phone" class="input" name="phone" value="934345890"><br><br>
+    <input type="submit" class="submit" value="Submit">
+    <p class="error"></p>
+  </form>
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
